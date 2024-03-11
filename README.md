@@ -6,3 +6,4 @@ Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 * Ramide Dantas (@ramidedantas, dono)
 * Gabriel Alves (@GabrielAlves0501)
 * Jamilly Braga (@jamilly-b)
+* Diogo Moura (@HyogoMoura)
