@@ -12,3 +12,4 @@ Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 * João Torpe (@JoaoTorpe)
 * Gustavo Melo (@Gust4voMelo)
 * Raul Melo (@MaedreV)
+* Richardson Silva Lima dos Santos (@MasterRick)
