@@ -13,3 +13,4 @@ Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 * Gustavo Melo (@Gust4voMelo)
 * Raul Melo (@MaedreV)
 * João Gouveia (@JoaoVitorGL)
+* Rinaldo Bezerra (@RinaldoHub)
