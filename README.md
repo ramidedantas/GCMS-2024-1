@@ -15,3 +15,4 @@ Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 * João Gouveia (@JoaoVitorGL)
 * Rinaldo Bezerra (@RinaldoHub)
 * Víctor Gabriel (@victortads)
+* Augusto Marques (@augustomarqq)
