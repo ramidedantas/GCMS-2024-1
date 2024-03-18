@@ -16,3 +16,4 @@ Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 * Rinaldo Bezerra (@RinaldoHub)
 * Víctor Gabriel (@victortads)
 * Augusto Marques (@augustomarqq)
+* Fernando Castelo(@fernando-castelo)
