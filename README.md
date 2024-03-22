@@ -21,3 +21,4 @@ Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 * Marta Santos (@Mart0389)
 * Rodrigo Lopes (@rodrigolsouza)
 * Richardson Silva (@MasterRick)
+* Wallisson Rocha (@PilzTol)
