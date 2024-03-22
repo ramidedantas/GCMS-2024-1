@@ -22,3 +22,4 @@ Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 * Rodrigo Lopes (@rodrigolsouza)
 * Richardson Silva (@MasterRick)
 * Wallisson Rocha (@PilzTol)
+* Luis Lima (@LuisLimaJr)
