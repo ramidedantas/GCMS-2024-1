@@ -44,4 +44,11 @@ class WebAppApplicationTests {
                     .string(containsString("Hello, Albert")));
   }
 
+  @Test
+  public void shouldReturnJoaoGouveia() throws Exception {
+    this.mockMvc.perform(get("/JoaoGouveia"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, João Gouveia")));
+  }
 }
