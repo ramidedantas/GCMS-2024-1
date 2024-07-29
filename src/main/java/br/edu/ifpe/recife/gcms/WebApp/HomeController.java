@@ -36,4 +36,9 @@ public class HomeController {
 	public @ResponseBody String greetingRinaldo() {
 		return "Hello, Rinaldo!";
 	}
+
+	@RequestMapping("/fork/albert")
+	public @ResponseBody String greetingForkAlbert() {
+		return "Hello from Albert's fork!";
+	}
 }

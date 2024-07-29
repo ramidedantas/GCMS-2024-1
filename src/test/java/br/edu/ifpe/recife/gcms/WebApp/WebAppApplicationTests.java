@@ -15,8 +15,8 @@ import org.springframework.test.web.servlet.MockMvc;
  
 @SpringBootTest 
 @AutoConfigureMockMvc 
-class WebAppApplicationTests { 
- 
+class WebAppApplicationTests
+{
   @Autowired 
   private MockMvc mockMvc; 
  
@@ -42,6 +42,14 @@ class WebAppApplicationTests {
             .andDo(print()).andExpect(status().isOk())
             .andExpect(content()
                     .string(containsString("Hello, Albert")));
+  }
+
+  @Test
+  public void shouldReturnHelloFromAlbertsFork() throws Exception {
+    this.mockMvc.perform(get("/fork/albert"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello from Albert's fork!")));
   }
 
 }
