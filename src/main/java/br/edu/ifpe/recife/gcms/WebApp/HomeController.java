@@ -43,12 +43,6 @@ public class HomeController
         return "Hello from branch albert-alvin!";
     }
 
-    @RequestMapping("/rinaldo")
-    public @ResponseBody String greetingRinaldo()
-    {
-        return "Hello, Rinaldo!";
-    }
-
     @RequestMapping("/fork/albert")
     public @ResponseBody String greetingForkAlbert()
     {
@@ -59,5 +53,11 @@ public class HomeController
     public @ResponseBody String greetingJoaoGouveia()
     {
         return "Hello, João Gouveia!";
+    }
+
+    @RequestMapping("/rinaldo")
+    public @ResponseBody String greetingRinaldo()
+    {
+        return "Hello, Rinaldo!";
     }
 }

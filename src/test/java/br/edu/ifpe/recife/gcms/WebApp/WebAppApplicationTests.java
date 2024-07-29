@@ -56,6 +56,7 @@ class WebAppApplicationTests
                         .string(containsString("Hello from Albert's fork!")));
     }
 
+    @Test
     public void shouldReturnBranchAlbertAlvin() throws Exception
     {
         this.mockMvc.perform(get("/branch/albert-alvin"))
@@ -64,6 +65,7 @@ class WebAppApplicationTests
                         .string(containsString("Hello from branch albert-alvin!")));
     }
 
+    @Test
     public void shouldReturnJoaoGouveia() throws Exception
     {
         this.mockMvc.perform(get("/JoaoGouveia"))
