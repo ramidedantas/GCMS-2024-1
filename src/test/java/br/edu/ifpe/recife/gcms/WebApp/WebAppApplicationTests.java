@@ -15,13 +15,14 @@ import org.springframework.test.web.servlet.MockMvc;
  
 @SpringBootTest 
 @AutoConfigureMockMvc 
-class WebAppApplicationTests { 
- 
+class WebAppApplicationTests
+{
   @Autowired 
   private MockMvc mockMvc; 
  
   @Test 
-  public void shouldReturnDefaultMessage() throws Exception { 
+  public void shouldReturnDefaultMessage() throws Exception
+  {
     this.mockMvc.perform(get("/")) 
         .andDo(print()).andExpect(status().isOk()) 
         .andExpect(content() 
@@ -29,7 +30,8 @@ class WebAppApplicationTests {
   } 
   
   @Test 
-  public void shouldReturnFulano() throws Exception { 
+  public void shouldReturnFulano() throws Exception
+  {
     this.mockMvc.perform(get("/fulano")) 
         .andDo(print()).andExpect(status().isOk()) 
         .andExpect(content() 
@@ -37,7 +39,8 @@ class WebAppApplicationTests {
   }
 
   @Test
-  public void shouldReturnAlbert() throws Exception {
+  public void shouldReturnAlbert() throws Exception
+  {
     this.mockMvc.perform(get("/albert"))
             .andDo(print()).andExpect(status().isOk())
             .andExpect(content()
@@ -45,10 +48,18 @@ class WebAppApplicationTests {
   }
 
   @Test
+  public void shouldReturnBranchAlbertAlvin() throws Exception {
+    this.mockMvc.perform(get("/branch/albert-alvin"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello from branch albert-alvin!")));
+  }
+
   public void shouldReturnJoaoGouveia() throws Exception {
     this.mockMvc.perform(get("/JoaoGouveia"))
             .andDo(print()).andExpect(status().isOk())
             .andExpect(content()
                     .string(containsString("Hello, João Gouveia")));
   }
+
 }

@@ -32,6 +32,11 @@ public class HomeController {
 		return "Hello, Albert!";
 	}
 
+	@RequestMapping("/branch/albert-alvin")
+	public @ResponseBody String greetingFromBranchAlbertAlvin() {
+		return "Hello from branch albert-alvin!";
+	}
+
 	@RequestMapping("/rinaldo")
 	public @ResponseBody String greetingRinaldo() {
 		return "Hello, Rinaldo!";
