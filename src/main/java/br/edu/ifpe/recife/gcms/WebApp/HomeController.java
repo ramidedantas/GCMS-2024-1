@@ -66,6 +66,11 @@ public class HomeController {
         return "Hello, Fernando!";
     }
 
+    @RequestMapping("/fork/fernando")
+    public @ResponseBody String greetingFernandoFork() {
+        return "Hello from Fernando fork!";
+    }
+
     @RequestMapping("/hotfix/fernando")
     public @ResponseBody String greetingFernandoHotfix() {
         return "Hello, Fernando from hotfix branch";
