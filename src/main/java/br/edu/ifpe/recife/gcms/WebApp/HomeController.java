@@ -65,10 +65,9 @@ public class HomeController {
     public @ResponseBody String greetingFernando() {
         return "Hello, Fernando!";
     }
-
-    @RequestMapping("/hotfix/fernando")
-    public @ResponseBody String greetingFernandoHotfix() {
-        return "Hello, Fernando from hotfix branch";
+    @RequestMapping("/branch/fernando")
+    public @ResponseBody String greetingFromFernandoBranch() {
+        return "Hello from Fernando branch";
     }
 
     @RequestMapping("/victor")
