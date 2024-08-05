@@ -90,5 +90,21 @@ class WebAppApplicationTests {
                         .andExpect(content()
                                 .string(containsString("Hello, Fernando!")));
         }
+        
+        @Test
+        public void shouldReturnJulia() throws Exception {
+                this.mockMvc.perform(get("/julia"))
+                        .andDo(print()).andExpect(status().isOk())
+                        .andExpect(content()
+                                .string(containsString("Hello, Julia!")));
+        }
+        
+        @Test
+        public void shouldReturnhotfix() throws Exception {
+                this.mockMvc.perform(get("/hotfix"))
+                        .andDo(print()).andExpect(status().isOk())
+                        .andExpect(content()
+                                .string(containsString("Hello, hotfix!")));
+        }
 
 }

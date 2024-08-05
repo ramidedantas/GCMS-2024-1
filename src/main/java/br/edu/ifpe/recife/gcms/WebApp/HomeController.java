@@ -91,8 +91,13 @@ public class HomeController {
     }
     
     @RequestMapping("/julia")
-    public @ResponseBody String greetingAugusto() {
+    public @ResponseBody String greetingJulia() {
         return "Hello, Julia!";
+    }
+    
+    @RequestMapping("/hotfix")
+    public @ResponseBody String greetinghotfix() {
+        return "Hello, hotfix!";
     }
 
 
