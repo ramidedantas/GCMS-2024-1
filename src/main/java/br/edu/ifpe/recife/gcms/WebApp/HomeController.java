@@ -94,6 +94,6 @@ public class HomeController {
     public @ResponseBody String greetingAugusto() {
         return "Hello, Julia!";
     }
-
+    
 
 }
