@@ -72,12 +72,12 @@ public class HomeController {
 
     @RequestMapping("/victor")
     public @ResponseBody String greetingVictor() {
-        return "Hello, Víctor!";
+        return "Hello, Victor!";
     }
 
     @RequestMapping("/branch/victor")
     public @ResponseBody String greetingBranchVictor() {
-        return "Hello, Branch Víctor!";
+        return "Hello, Branch Victor!";
     }
 
     @RequestMapping("/fork/victor")
