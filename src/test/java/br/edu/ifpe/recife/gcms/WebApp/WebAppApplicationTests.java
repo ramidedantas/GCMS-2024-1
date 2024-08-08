@@ -74,6 +74,14 @@ class WebAppApplicationTests {
         }
 
         @Test
+        public void shouldReturnBranchRichardsonSilva() throws Exception {
+                this.mockMvc.perform(get("/branch/richardson-silva"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello from branch richardson-silva!")));
+        }
+
+        @Test
         public void shouldReturnVictor() throws Exception {
                 this.mockMvc.perform(get("/victor"))
                                 .andDo(print()).andExpect(status().isOk())
@@ -100,33 +108,33 @@ class WebAppApplicationTests {
         @Test
         public void shouldReturnFernando() throws Exception {
                 this.mockMvc.perform(get("/fernando"))
-                        .andDo(print()).andExpect(status().isOk())
-                        .andExpect(content()
-                                .string(containsString("Hello, Fernando!")));
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Fernando!")));
         }
-        
+
         @Test
         public void shouldReturnJulia() throws Exception {
                 this.mockMvc.perform(get("/julia"))
-                        .andDo(print()).andExpect(status().isOk())
-                        .andExpect(content()
-                                .string(containsString("Hello, Julia!")));
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Julia!")));
         }
-        
+
         @Test
         public void shouldReturnhotfix() throws Exception {
                 this.mockMvc.perform(get("/hotfix"))
-                        .andDo(print()).andExpect(status().isOk())
-                        .andExpect(content()
-                                .string(containsString("Hello, hotfix!")));
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, hotfix!")));
         }
 
         @Test
         public void shouldReturnJoaoTorpe() throws Exception {
                 this.mockMvc.perform(get("/joaoTorpe"))
-                        .andDo(print()).andExpect(status().isOk())
-                        .andExpect(content()
-                                .string(containsString("Hello, joaoTorpe!")));
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, joaoTorpe!")));
         }
 
 }
