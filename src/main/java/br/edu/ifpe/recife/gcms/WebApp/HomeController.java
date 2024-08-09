@@ -89,6 +89,12 @@ public class HomeController {
     public @ResponseBody String greetingAugusto() {
         return "Hello, Augusto!";
     }
+    
+    @RequestMapping("/hotfix-augusto")
+    public @ResponseBody String greetingHotfixAugusto() {
+        return "Hello, Hotfix Augusto!";
+    }
+
 
 
 }
