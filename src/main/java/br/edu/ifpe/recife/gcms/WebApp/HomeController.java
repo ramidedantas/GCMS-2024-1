@@ -45,6 +45,11 @@ public class HomeController {
     public @ResponseBody String greetingJoaoGouveia() {
         return "Hello, João Gouveia!";
     }
+    
+    @RequestMapping("/branch/joao-gouveia")
+    public @ResponseBody String greetingFromBranchJoaoGouveia() {
+        return "Hello from branch joao-gouveia!";
+    }
 
     @RequestMapping("/rinaldohub")
     public @ResponseBody String greetingRinaldo() {
@@ -93,7 +98,7 @@ public class HomeController {
 
     @RequestMapping("/jamilly")
     public @ResponseBody String greetingJamilly() {
-        return "Hello, Jamilly!";
+        return "Hello, Jamilly! Esse projeto é um fork de https://github.com/ramidedantas/GCMS-2024-1";
     }
 
     @RequestMapping("/ramide")
@@ -114,6 +119,21 @@ public class HomeController {
     @RequestMapping("/joaoTorpe")
     public @ResponseBody String greetingJoaoTorpe() {
         return "Hello, joaoTorpe!";
+    }
+    
+    @RequestMapping("/aurianlira")
+    public @ResponseBody String greetingAurianLira() {
+        return "Hello, Aurian Lira!";
+    }
+    
+    @RequestMapping("Mateus")
+    public @ResponseBody String greetingMateus() {
+    return "Hello, Mateus!";
+    }
+    
+    @RequestMapping("/raul")
+    public @ResponseBody String greetingRaul() {
+    return "Hello, Raul!";
     }
 
 }

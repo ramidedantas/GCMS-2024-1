@@ -22,6 +22,7 @@ target/
 **/.settings/
 .springBeans
 .sts4-cache
+**/.metadata/
 
 ### NetBeans ###
 /nbproject/private/
