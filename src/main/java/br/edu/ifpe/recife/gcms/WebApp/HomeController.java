@@ -125,6 +125,7 @@ public class HomeController {
     public @ResponseBody String greetingAurianLira() {
         return "Hello, Aurian Lira!";
     }
+    
     @RequestMapping("Mateus")
     public @ResponseBody String greetingMateus() {
     return "Hello, Mateus!";
