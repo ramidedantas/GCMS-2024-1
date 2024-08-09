@@ -1,17 +1,15 @@
 package br.edu.ifpe.recife.gcms.WebApp;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-
 import static org.hamcrest.Matchers.containsString;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.test.web.servlet.MockMvc;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -76,6 +74,14 @@ class WebAppApplicationTests {
         }
 
         @Test
+        public void shouldReturnBranchRichardsonSilva() throws Exception {
+                this.mockMvc.perform(get("/branch/richardson-silva"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello from branch richardson-silva!")));
+        }
+
+        @Test
         public void shouldReturnVictor() throws Exception {
                 this.mockMvc.perform(get("/victor"))
                                 .andDo(print()).andExpect(status().isOk())
@@ -84,19 +90,59 @@ class WebAppApplicationTests {
         }
 
         @Test
-        public void shouldReturnFernando() throws Exception {
-                this.mockMvc.perform(get("/fernando"))
-                        .andDo(print()).andExpect(status().isOk())
-                        .andExpect(content()
-                                .string(containsString("Hello, Fernando!")));
+        public void shouldReturnForkVictor() throws Exception {
+                this.mockMvc.perform(get("/fork/victor"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Fork Victor!")));
         }
 
         @Test
-        public void shouldReturnFernandoHotfix() throws Exception {
-                this.mockMvc.perform(get("/hotfix/fernando"))
-                        .andDo(print()).andExpect(status().isOk())
-                        .andExpect(content()
-                                .string(containsString("Hello, Fernando from hotfix branch")));
+        public void shouldReturnBranchVictor() throws Exception {
+                this.mockMvc.perform(get("/branch/victor"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Branch Victor!")));
+        }
+
+        @Test
+        public void shouldReturnFernando() throws Exception {
+                this.mockMvc.perform(get("/fernando"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Fernando!")));
+        }
+
+        @Test
+        public void shouldReturnJulia() throws Exception {
+                this.mockMvc.perform(get("/julia"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Julia!")));
+        }
+
+        @Test
+        public void shouldReturnhotfix() throws Exception {
+                this.mockMvc.perform(get("/hotfix"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, hotfix!")));
+        }
+
+        @Test
+        public void shouldReturnJoaoTorpe() throws Exception {
+                this.mockMvc.perform(get("/joaoTorpe"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, joaoTorpe!")));
+        }
+        
+        @Test
+        public void shouldReturnRinaldoHub() throws Exception {
+                this.mockMvc.perform(get("/rinaldohub"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, RinaldoHub!")));
         }
         
         @Test

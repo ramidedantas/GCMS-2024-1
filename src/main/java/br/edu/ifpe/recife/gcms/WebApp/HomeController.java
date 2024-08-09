@@ -46,9 +46,9 @@ public class HomeController {
         return "Hello, João Gouveia!";
     }
 
-    @RequestMapping("/rinaldo")
+    @RequestMapping("/rinaldohub")
     public @ResponseBody String greetingRinaldo() {
-        return "Hello, Rinaldo!";
+        return "Hello, RinaldoHub!";
     }
 
     @RequestMapping("/Diogo")
@@ -61,25 +61,59 @@ public class HomeController {
         return "Hello, Richardson Silva!";
     }
 
+    @RequestMapping("/branch/richardson-silva")
+    public @ResponseBody String greetingFromBranchRicardson() {
+        return "Hello from branch richardson-silva!";
+    }
+
     @RequestMapping("/fernando")
     public @ResponseBody String greetingFernando() {
         return "Hello, Fernando!";
     }
 
-    @RequestMapping("/hotfix/fernando")
-    public @ResponseBody String greetingFernandoHotfix() {
-        return "Hello, Fernando from hotfix branch";
+    @RequestMapping("/branch/fernando")
+    public @ResponseBody String greetingFromFernandoBranch() {
+        return "Hello from Fernando branch";
     }
 
     @RequestMapping("/victor")
     public @ResponseBody String greetingVictor() {
-        return "Hello, Víctor!";
+        return "Hello, Victor!";
     }
-    
+
+    @RequestMapping("/branch/victor")
+    public @ResponseBody String greetingBranchVictor() {
+        return "Hello, Branch Victor!";
+    }
+
+    @RequestMapping("/fork/victor")
+    public @ResponseBody String greetingForkVictor() {
+        return "Hello, Fork Victor!";
+    }
+
     @RequestMapping("/jamilly")
     public @ResponseBody String greetingJamilly() {
         return "Hello, Jamilly!";
     }
 
+    @RequestMapping("/ramide")
+    public @ResponseBody String greetingRamide() {
+        return "Hello, Ramide Fork!";
+    }
+
+    @RequestMapping("/augusto")
+    public @ResponseBody String greetingAugusto() {
+        return "Hello, Augusto!";
+    }
+
+    @RequestMapping("/julia")
+    public @ResponseBody String greetingJulia() {
+        return "Hello, Julia!";
+    }
+
+    @RequestMapping("/joaoTorpe")
+    public @ResponseBody String greetingJoaoTorpe() {
+        return "Hello, joaoTorpe!";
+    }
 
 }
