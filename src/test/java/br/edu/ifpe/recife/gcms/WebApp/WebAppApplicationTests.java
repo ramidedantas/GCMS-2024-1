@@ -126,7 +126,7 @@ class WebAppApplicationTests {
                 this.mockMvc.perform(get("/hotfix"))
                                 .andDo(print()).andExpect(status().isOk())
                                 .andExpect(content()
-                                                .string(containsString("Hello, hotfix!")));
+                                                .string(containsString("Hello, Hotfix!")));
         }
 
         @Test
@@ -152,4 +152,11 @@ class WebAppApplicationTests {
                         .andExpect(content()
                                 .string(containsString("Hello, Jamilly!")));
         }
+        
+        public void shouldAurianLira() throws Exception {
+            this.mockMvc.perform(get("/aurianlira"))
+                    .andDo(print()).andExpect(status().isOk())
+                    .andExpect(content()
+                            .string(containsString("Hello, Aurian Lira!")));
+    }
 }
