@@ -93,7 +93,7 @@ public class HomeController {
 
     @RequestMapping("/jamilly")
     public @ResponseBody String greetingJamilly() {
-        return "Hello, Jamilly!";
+        return "Hello, Jamilly! Esse projeto é um fork de https://github.com/ramidedantas/GCMS-2024-1";
     }
 
     @RequestMapping("/ramide")
