@@ -90,10 +90,4 @@ public class HomeController {
         return "Hello, Augusto!";
     }
     
-    @RequestMapping("/hotfix-augusto")
-    public @ResponseBody String greetingHotfixAugusto() {
-        return "Hello, Hotfix Augusto!";
-    }
-
-
 }
