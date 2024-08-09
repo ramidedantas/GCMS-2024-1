@@ -115,6 +115,11 @@ public class HomeController {
     public @ResponseBody String greetingJulia() {
         return "Hello, Julia!";
     }
+    
+    @RequestMapping("/julia")
+    public @ResponseBody String greetingJulia() {
+        return "Hello, from branch julia-didra!";
+    }
 
     @RequestMapping("/joaoTorpe")
     public @ResponseBody String greetingJoaoTorpe() {
