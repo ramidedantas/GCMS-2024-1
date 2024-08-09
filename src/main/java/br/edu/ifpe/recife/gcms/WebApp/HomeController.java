@@ -45,7 +45,7 @@ public class HomeController {
     public @ResponseBody String greetingJoaoGouveia() {
         return "Hello, João Gouveia!";
     }
-    
+
     @RequestMapping("/branch/joao-gouveia")
     public @ResponseBody String greetingFromBranchJoaoGouveia() {
         return "Hello from branch joao-gouveia!";
@@ -69,6 +69,11 @@ public class HomeController {
     @RequestMapping("/branch/richardson-silva")
     public @ResponseBody String greetingFromBranchRicardson() {
         return "Hello from branch richardson-silva!";
+    }
+
+    @RequestMapping("/fork/richardson-silva")
+    public @ResponseBody String greetingForkRichardson() {
+        return "Hello from Richardson Silva's fork!";
     }
 
     @RequestMapping("/fernando")
@@ -115,12 +120,12 @@ public class HomeController {
     public @ResponseBody String greetingJulia() {
         return "Hello, Julia!";
     }
-    
+
     @RequestMapping("/julia")
     public @ResponseBody String greetingJulia() {
         return "Hello, from branch julia-didra!";
     }
-    
+
     @RequestMapping("/julia")
     public @ResponseBody String greetingJulia() {
         return "Hello, julia-didra fork's!";
@@ -130,30 +135,30 @@ public class HomeController {
     public @ResponseBody String greetingJoaoTorpe() {
         return "Hello, joaoTorpe!";
     }
-    
+
     @RequestMapping("/aurianlira")
     public @ResponseBody String greetingAurianLira() {
         return "Hello, Aurian Lira!";
     }
-    
+
     @RequestMapping("Mateus")
     public @ResponseBody String greetingMateus() {
-    return "Hello, Mateus!";
+        return "Hello, Mateus!";
     }
-    
+
     @RequestMapping("/raul")
     public @ResponseBody String greetingRaul() {
-    return "Hello, Raul!";
+        return "Hello, Raul!";
     }
-    
+
     @RequestMapping("/gustavo")
     public @ResponseBody String greetingGustavo() {
-    return "Hello, Gustavo!";
+        return "Hello, Gustavo!";
     }
-    
+
     @RequestMapping("/branch/gustavo")
     public @ResponseBody String greetingBranchGustavo() {
-    return "Hello, Branch Gustavo!";
+        return "Hello, Branch Gustavo!";
     }
 
     @RequestMapping("/fork/gustavo")
