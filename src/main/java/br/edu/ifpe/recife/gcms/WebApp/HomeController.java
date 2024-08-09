@@ -130,6 +130,10 @@ public class HomeController {
     public @ResponseBody String greetingMateus() {
     return "Hello, Mateus!";
     }
-
+    
+    @RequestMapping("/raul")
+    public @ResponseBody String greetingRaul() {
+    return "Hello, Raul!";
+    }
 
 }
