@@ -45,10 +45,15 @@ public class HomeController {
     public @ResponseBody String greetingJoaoGouveia() {
         return "Hello, João Gouveia!";
     }
+    
+    @RequestMapping("/branch/joao-gouveia")
+    public @ResponseBody String greetingFromBranchJoaoGouveia() {
+        return "Hello from branch joao-gouveia!";
+    }
 
-    @RequestMapping("/rinaldo")
+    @RequestMapping("/rinaldohub")
     public @ResponseBody String greetingRinaldo() {
-        return "Hello, Rinaldo!";
+        return "Hello, RinaldoHub!";
     }
 
     @RequestMapping("/Diogo")
@@ -61,10 +66,16 @@ public class HomeController {
         return "Hello, Richardson Silva!";
     }
 
+    @RequestMapping("/branch/richardson-silva")
+    public @ResponseBody String greetingFromBranchRicardson() {
+        return "Hello from branch richardson-silva!";
+    }
+
     @RequestMapping("/fernando")
     public @ResponseBody String greetingFernando() {
         return "Hello, Fernando!";
     }
+
     @RequestMapping("/branch/fernando")
     public @ResponseBody String greetingFromFernandoBranch() {
         return "Hello from Fernando branch";
@@ -72,22 +83,53 @@ public class HomeController {
 
     @RequestMapping("/victor")
     public @ResponseBody String greetingVictor() {
-        return "Hello, Víctor!";
+        return "Hello, Victor!";
     }
-    
+
+    @RequestMapping("/branch/victor")
+    public @ResponseBody String greetingBranchVictor() {
+        return "Hello, Branch Victor!";
+    }
+
+    @RequestMapping("/fork/victor")
+    public @ResponseBody String greetingForkVictor() {
+        return "Hello, Fork Victor!";
+    }
+
     @RequestMapping("/jamilly")
     public @ResponseBody String greetingJamilly() {
-        return "Hello, Jamilly!";
+        return "Hello, Jamilly! Esse projeto é um fork de https://github.com/ramidedantas/GCMS-2024-1";
     }
-    
+
     @RequestMapping("/ramide")
     public @ResponseBody String greetingRamide() {
         return "Hello, Ramide Fork!";
     }
-    
+
     @RequestMapping("/augusto")
     public @ResponseBody String greetingAugusto() {
         return "Hello, Augusto!";
     }
+
+    @RequestMapping("/julia")
+    public @ResponseBody String greetingJulia() {
+        return "Hello, Julia!";
+    }
+
+    @RequestMapping("/joaoTorpe")
+    public @ResponseBody String greetingJoaoTorpe() {
+        return "Hello, joaoTorpe!";
+    }
     
+    @RequestMapping("/aurianlira")
+    public @ResponseBody String greetingAurianLira() {
+        return "Hello, Aurian Lira!";
+    }
+    
+    @RequestMapping("Mateus")
+    public @ResponseBody String greetingMateus() {
+    return "Hello, Mateus!";
+    }
+
+
 }
