@@ -247,4 +247,11 @@ class WebAppApplicationTests {
                                 .andExpect(content()
                                                 .string(containsString("Hello, Branch Raul!")));
         }
+        @Test
+        public void shouldReturnForkRaul() throws Exception {
+                this.mockMvc.perform(get("/fork/raul"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Fork Raul!")));
+        }
 }
