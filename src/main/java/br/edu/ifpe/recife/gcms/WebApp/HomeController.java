@@ -50,6 +50,11 @@ public class HomeController {
     public @ResponseBody String greetingFromBranchJoaoGouveia() {
         return "Hello from branch joao-gouveia!";
     }
+    
+    @RequestMapping("/fork/joao-gouveia")
+    public @ResponseBody String greetingForkJoao() {
+        return "Hello from Joao's fork!";
+    }
 
     @RequestMapping("/rinaldohub")
     public @ResponseBody String greetingRinaldo() {
@@ -170,6 +175,7 @@ public class HomeController {
     @RequestMapping("/branch/aurianmoura")
     public @ResponseBody String greetingFromBranchAurian() {
         return "Hello from branch aurianmoura";
+    }
 
     @RequestMapping("/raul")
     public @ResponseBody String greetingRaul() {
@@ -198,10 +204,14 @@ public class HomeController {
     public @ResponseBody String greetingForkRaul() {
         return "Hello, Fork Raul!";
     }
-    
 
     @RequestMapping("/fork/aurianlira")
     public @ResponseBody String greetingForkAurianFork() {
         return "Hello from Aurian Lira's fork!";
     }
+    @RequestMapping("/branch/joaoTorpe")
+    public @ResponseBody String greetingBranchJoaoTorpe() {
+        return "Hello, Branch joaoTorpe!";
+    }
+
 }

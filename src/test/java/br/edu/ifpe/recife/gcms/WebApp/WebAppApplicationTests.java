@@ -74,6 +74,14 @@ class WebAppApplicationTests {
                                 .andExpect(content()
                                                 .string(containsString("Hello from branch joao-gouveia!")));
         }
+        
+        @Test
+        public void shouldReturnHelloFromJoaosFork() throws Exception {
+                this.mockMvc.perform(get("/fork/joao-gouveia"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello from Joao's fork!")));
+        }
 
         @Test
         public void shouldReturnRichardson() throws Exception {
@@ -229,10 +237,10 @@ class WebAppApplicationTests {
         @Test
         public void shouldReturnBranchAurian() throws Exception {
                 this.mockMvc.perform(get("/branch/aurianmoura"))
-                                .andDo(print()).andExpect(status().isOk())
-                                .andExpect(content()
-                                                .string(containsString("Hello from branch aurianmoura")));
-
+                        .andDo(print()).andExpect(status().isOk())
+                        .andExpect(content()
+                                .string(containsString("Hello from branch aurianmoura")));
+        }
         @Test
         public void shouldReturnGustavo() throws Exception {
                 this.mockMvc.perform(get("/gustavo"))
@@ -278,4 +286,13 @@ class WebAppApplicationTests {
                                 .andExpect(content()
                                                 .string(containsString("Hello from Aurian Lira's fork!")));
         }
+
+        @Test
+        public void shouldReturnBranchJoaoTorpe() throws Exception {
+                this.mockMvc.perform(get("/branch/joaoTorpe"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Branch joaoTorpe!")));
+        }
+
 }
