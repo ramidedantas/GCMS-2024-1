@@ -131,18 +131,28 @@ public class HomeController {
     public @ResponseBody String greetingAugusto() {
         return "Hello, Augusto!";
     }
+    
+    @RequestMapping("/branch/augusto-allan")
+    public @ResponseBody String greetingBranchAugustoAllan() {
+        return "Hello from branch augusto-allan!";
+    }
+    
+    @RequestMapping("/fork/augusto-allan")
+    public @ResponseBody String greetingForkAugustoAllan() {
+        return "Hello from fork augusto-allan!";
+    }
 
     @RequestMapping("/julia")
     public @ResponseBody String greetingJulia() {
         return "Hello, Julia!";
     }
 
-    @RequestMapping("/julia")
+    @RequestMapping("/branch/julia")
     public @ResponseBody String greetingJuliaBranch() {
         return "Hello, from branch julia-didra!";
     }
 
-    @RequestMapping("/julia")
+    @RequestMapping("/fork/julia")
     public @ResponseBody String greetingJuliaFork() {
         return "Hello, julia-didra fork's!";
     }
