@@ -131,6 +131,11 @@ public class HomeController {
     public @ResponseBody String greetingBranchAugustoAllan() {
         return "Hello from branch augusto-allan!";
     }
+    
+    @RequestMapping("/fork/augusto-allan")
+    public @ResponseBody String greetingForkAugustoAllan() {
+        return "Hello from fork augusto-allan!";
+    }
 
     @RequestMapping("/julia")
     public @ResponseBody String greetingJulia() {
