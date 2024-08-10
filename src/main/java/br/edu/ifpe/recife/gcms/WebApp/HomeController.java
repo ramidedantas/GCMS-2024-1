@@ -65,6 +65,12 @@ public class HomeController {
     public @ResponseBody String greetingDiogoBranch() {
         return "Hello from Diogo's Branch!";
     }
+    
+    @RequestMapping("/Diogof")
+    public @ResponseBody String greetingDiogoForck() {
+        return "Hello from Diogo's Forck!";
+    }
+
 
     @RequestMapping("/richardson")
     public @ResponseBody String greetingRichardson() {
