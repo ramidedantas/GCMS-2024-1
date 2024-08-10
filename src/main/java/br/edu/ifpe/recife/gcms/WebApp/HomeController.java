@@ -170,6 +170,7 @@ public class HomeController {
     @RequestMapping("/branch/aurianmoura")
     public @ResponseBody String greetingFromBranchAurian() {
         return "Hello from branch aurianmoura";
+    }
 
     @RequestMapping("/raul")
     public @ResponseBody String greetingRaul() {
