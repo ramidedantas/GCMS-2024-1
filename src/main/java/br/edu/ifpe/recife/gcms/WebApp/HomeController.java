@@ -198,4 +198,10 @@ public class HomeController {
     public @ResponseBody String greetingForkRaul() {
         return "Hello, Fork Raul!";
     }
+    
+
+    @RequestMapping("/fork/aurianlira")
+    public @ResponseBody String greetingForkAurianFork() {
+        return "Hello from Aurian Lira's fork!";
+    }
 }
