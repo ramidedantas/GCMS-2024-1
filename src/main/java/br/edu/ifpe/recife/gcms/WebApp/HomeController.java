@@ -174,8 +174,10 @@ public class HomeController {
     
     @RequestMapping("/branch/aurianmoura")
     public @ResponseBody String greetingFromBranchAurian() {
-        return "Hello from branch aurianmoura";
+        return "Hello from branch aurianmoura"; 
+
     }
+
 
     @RequestMapping("/raul")
     public @ResponseBody String greetingRaul() {
@@ -204,6 +206,14 @@ public class HomeController {
     public @ResponseBody String greetingForkRaul() {
         return "Hello, Fork Raul!";
     }
+
+
+
+    @RequestMapping("/fork/joaoTorpe")
+    public @ResponseBody String greetingForkJoaoTorpe() {
+        return "Hello, Fork joaoTorpe!";
+    }
+
 
     @RequestMapping("/branch/joaoTorpe")
     public @ResponseBody String greetingBranchJoaoTorpe() {
