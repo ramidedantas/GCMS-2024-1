@@ -223,9 +223,18 @@ public class HomeController {
     }
     
     @RequestMapping("/gabriel")
-    public @ResponseBody String greetingGabriel() {
+    	public @ResponseBody String greetingGabriel() {
     	return "Hello, Gabriel!";
     }
+    
+    @RequestMapping("/branch/gabriel")
+    	public @ResponseBody String greetingBranchGabriel() {
+    	return "Hello, Branch Gabriel!";
+    }
 
-
+    @RequestMapping("/fork/gabriel")
+    	public @ResponseBody String greetingForkGabriel() {
+    	return "Hello, Fork Gabriel!";
+    }
+    
 }
