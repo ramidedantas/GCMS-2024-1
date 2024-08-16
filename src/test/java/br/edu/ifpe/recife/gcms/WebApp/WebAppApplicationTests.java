@@ -192,7 +192,7 @@ class WebAppApplicationTests {
                 this.mockMvc.perform(get("/hotfix"))
                                 .andDo(print()).andExpect(status().isOk())
                                 .andExpect(content()
-                                                .string(containsString("Hello, Hotfix!")));
+                                                .string(containsString("Hello, Hotfix(Gabriel)!")));
         }
 
         @Test
