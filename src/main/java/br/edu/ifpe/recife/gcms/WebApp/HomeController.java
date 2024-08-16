@@ -207,19 +207,19 @@ public class HomeController {
         return "Hello, Fork Raul!";
     }
 
-
+    @RequestMapping("/fork/aurianlira")
+    public @ResponseBody String greetingForkAurianFork() {
+        return "Hello from Aurian Lira's fork!";
+    }
 
     @RequestMapping("/fork/joaoTorpe")
     public @ResponseBody String greetingForkJoaoTorpe() {
         return "Hello, Fork joaoTorpe!";
     }
 
-
     @RequestMapping("/branch/joaoTorpe")
     public @ResponseBody String greetingBranchJoaoTorpe() {
         return "Hello, Branch joaoTorpe!";
     }
-
-
 
 }
