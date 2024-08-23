@@ -23,7 +23,7 @@ public class HomeController {
 
     @RequestMapping("/hotfix")
     public @ResponseBody String greetingHotfix() {
-        return "Hello, Hotfix!";
+        return "Hello, Hotfix(Gabriel)!";
     }
 
     @RequestMapping("/albert")
@@ -220,6 +220,16 @@ public class HomeController {
     @RequestMapping("/branch/joaoTorpe")
     public @ResponseBody String greetingBranchJoaoTorpe() {
         return "Hello, Branch joaoTorpe!";
+    }
+    
+    @RequestMapping("/gabriel")
+    public @ResponseBody String greetingGabriel() {
+    	return "Hello, Gabriel!";
+    }
+
+    @RequestMapping("/branch/gabriel")
+    public @ResponseBody String greetingBranchGabriel() {
+    	return "Hello, Branch Gabriel!";
     }
 
 }
