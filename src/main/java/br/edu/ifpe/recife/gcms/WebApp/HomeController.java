@@ -222,7 +222,7 @@ public class HomeController {
         return "Hello, Branch joaoTorpe!";
     }
     
-    @RequestMapping("/gabriel")
+    @RequestMapping("/Gabriel")
     public @ResponseBody String greetingGabriel() {
     	return "Hello, Gabriel!";
     }
