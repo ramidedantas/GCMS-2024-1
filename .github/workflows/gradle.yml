@@ -17,6 +17,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    container:
+      image: docker://ramideifpe/gcms-2014-1:webapp
     permissions:
       contents: read
 
