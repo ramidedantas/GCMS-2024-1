@@ -246,5 +246,11 @@ public class HomeController {
     public @ResponseBody String greetingForkLuis() {
         return "Hello, Fork Luis!";
     }
+    
+    @RequestMapping("/branch/Mateus-Henrique")
+    public @ResponseBody String greetingFromBranchMateus() {
+        return "Hello, Branch Mateus!"; 
+
+    }
 
 }
