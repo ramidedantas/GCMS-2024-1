@@ -11,8 +11,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import java.beans.Transient;
-
 @SpringBootTest
 @AutoConfigureMockMvc
 class WebAppApplicationTests {
@@ -352,6 +350,14 @@ class WebAppApplicationTests {
                                 .andDo(print()).andExpect(status().isOk())
                                 .andExpect(content()
                                                 .string(containsString("Hello, Fork Mateus!")));
+        }
+
+        @Test
+        public void shouldReturnMarta() throws Exception {
+                this.mockMvc.perform(get("/Marta"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello, Marta")));
         }
 
 }
