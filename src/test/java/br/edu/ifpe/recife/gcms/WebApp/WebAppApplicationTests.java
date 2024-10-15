@@ -357,7 +357,23 @@ class WebAppApplicationTests {
                 this.mockMvc.perform(get("/Marta"))
                                 .andDo(print()).andExpect(status().isOk())
                                 .andExpect(content()
-                                                .string(containsString("Hello, Marta")));
+                                                .string(containsString("Hello, Marta!")));
+        }
+
+        @Test
+        public void shouldReturnBranchMartaSantos() throws Exception {
+                this.mockMvc.perform(get("/branch/Marta-Santos"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello from branch Marta-Santos!")));
+        }
+
+        @Test
+        public void shouldReturnForkMartaSantos() throws Exception {
+                this.mockMvc.perform(get("/fork/Marta-Santos"))
+                                .andDo(print()).andExpect(status().isOk())
+                                .andExpect(content()
+                                                .string(containsString("Hello from Marta Santos fork!")));
         }
 
 }
