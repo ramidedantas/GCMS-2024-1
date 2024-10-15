@@ -260,12 +260,12 @@ public class HomeController {
 
     @RequestMapping("/Marta")
     public @ResponseBody String greetingMarta() {
-    return "Hello, Marta Santos !";
+    return "Hello, Marta!";
    }
 
    @RequestMapping("/branch/Marta-Santos")
     public @ResponseBody String greetingFromBranchMarta() {
-        return "Hello from branch Marta-Santos!";
+        return "Hello from branch Marta!";
     }
 
     @RequestMapping("/fork/Marta-Santos")
